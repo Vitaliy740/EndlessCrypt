@@ -35,7 +35,7 @@ To run the project locally:
    ```bash
    git clone https://github.com/Vitaliy740/OpenWorldCubeKiller.git
 2. Open the project in Unity (recommended version 2019.4.14f1).
-3. Start the OpenWorldMain scene to launch the game.
+3. Start the MainGameScene scene to launch the game.
 ## 📂 Project Structure
 
 - **Assets/** — contains all game assets, scenes, scripts, and configurations.
