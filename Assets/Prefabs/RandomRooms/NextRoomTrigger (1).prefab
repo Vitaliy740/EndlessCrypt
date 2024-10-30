@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &597619424383652044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7870001838890519109}
+  - component: {fileID: 5443601167319443253}
+  - component: {fileID: 7568377233839084139}
+  - component: {fileID: 8952966716873757861}
+  m_Layer: 0
+  m_Name: NextRoomTrigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7870001838890519109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597619424383652044}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0, z: 10.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5443601167319443253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597619424383652044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1288223, y: 2.8349552, z: 2.9823198}
+  m_Center: {x: 0.56441116, y: 0.4180894, z: -0.15614891}
+--- !u!114 &7568377233839084139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597619424383652044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6739706c7cf24fb4d9c85962601adde1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoopRoomPrefab: {fileID: 8493251020824165609, guid: 715b6ef9871b86847bb266753d0e9284,
+    type: 3}
+  PreviousRoomPrefab: {fileID: 0}
+  OriginalRoomPrefab: {fileID: 0}
+  WallBlock: {fileID: 0}
+  EventOnNoItems:
+    m_PersistentCalls:
+      m_Calls: []
+  QuestSolvedNextRoom: {fileID: 362258846, guid: 660a4c0b33e26a6498f9174f049aa528,
+    type: 3}
+--- !u!114 &8952966716873757861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597619424383652044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bd318abf423d847aa4727ad4e3ccea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomPrefab: {fileID: 8493251020824165609, guid: 715b6ef9871b86847bb266753d0e9284,
+    type: 3}
+  StairRoomPrefab: {fileID: 362258846, guid: 660a4c0b33e26a6498f9174f049aa528, type: 3}
+  MoonBookPlaced: 0
+  StarsBookPlaced: 0
+  SunBookPlaced: 0
+  MoonPlaced: 0
+  StarsPlaced: 0
+  SunPlaced: 0
+  RequireNumberOfRightTurns: 0
+  states:
+  - {fileID: 11400000, guid: 544f0c0ca9fa3e34b88d746b72b11015, type: 2}
+  - {fileID: 11400000, guid: 62ce8d74ff297c84bb570b40a9dd143d, type: 2}
+  - {fileID: 11400000, guid: 0949b8293cb439c4591b50caf2bc32d0, type: 2}
